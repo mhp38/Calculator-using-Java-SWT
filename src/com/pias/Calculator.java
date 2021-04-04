@@ -80,7 +80,7 @@ public class Calculator {
 
 		num1S = inp.substring(0, inp.indexOf(type));
 		num2S = inp.substring(inp.indexOf(type) + 1);
-		num1 = Integer.parseInt(num1S);
+		num1 = Integer.parseInt(num1S);//(parseInt) This function parses the string argument as a signed decimal integer.
 		num2 = Integer.parseInt(num2S);
 
 		// 123 + 3
@@ -121,6 +121,8 @@ public class Calculator {
 			finalNum = num1 / num2;
 			text.setText("" + finalNum);
 			break;
+			
+			
 
 		}// end switch
 
@@ -327,6 +329,7 @@ public class Calculator {
 				// text.setText();
 			}
 		});
+		
 
 		// add.addListener(SWT.Selection, new Listener() {
 		//
